@@ -1,5 +1,5 @@
 <template>
-    <div id="a"
+    <div id="contact"
         class="mt-[100px]  flex flex-col md:flex-row lg:flex-row gap-y-[50px] justify-around bg-[black] rounded-[22px] text-white p-[40px]">
         <div class="w-[100%] md:w-[400px] lg:w-[400px] flex flex-col gap-y-6">
             <div class="">
@@ -36,7 +36,7 @@
                 </div>
                 <div>
                     <p>Message</p>
-                    <textarea name="" id="" cols="20" rows="3"
+                    <textarea name="" id="" cols="20" rows="2"
                         class="w-full lg:w-[300px] resize-none text-[#A8A8A8] max-h-[55px] outline-0 border-b-1 border-[red]"></textarea>
                 </div>
                 <button class="text-[black] rounded-[6px] bg-[white] lg:w-fit md:w-fit py-1 px-7">Submit</button>

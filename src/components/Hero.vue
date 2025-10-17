@@ -40,7 +40,7 @@ onMounted(() => {
     <div
         class="bg-[black]  flex flex-col gap-y-[20px] h-fit relative items-center rounded-[15px] lg:rounded-[32px]  text-white mt-[44px] p-[40px] sm:p-[50px] lg:p-[100px] font-[nim]">
         <div>
-            <p v-html="displayText" class="text-[20px]  lg:text-[55px] md:text-[40px] uppercase"></p>
+            <p v-html="displayText" class="text-[20px] lg:text-[55px] md:text-[40px] uppercase"></p>
         </div>
         <!-- <div class="text-white bg-[red] px-[70px] py-1 rounded-[10px] text-center">
             <a class="text-[16px] " href="">Start</a>

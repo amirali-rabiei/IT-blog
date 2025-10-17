@@ -1,10 +1,5 @@
-<script setup>
-import Index from './Index.vue';
-
-</script>
-
 <template>
-  <div>
-    <Index />
+  <div class=" container mx-auto px-2 lg:px-10">
+    <RouterView></RouterView>
   </div>
 </template>

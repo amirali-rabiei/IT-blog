@@ -1,18 +1,17 @@
 import { createWebHistory, createRouter } from 'vue-router'
-import Login from './src/pages/Login.vue'
-import Index from './src/components/Index.vue'
-
+import Index from './src/pages/Index.vue'
+import Blog from './src/pages/Blog.vue'
 
 const routes = [
     {
-        path: '/travel-agency-landing',
+        path: '/',
         name: 'index',
         component: Index
     },
     {
-        path: '/travel-agency-landing/login',
-        name: 'login',
-        component: Login
+        path: '/blog',
+        name: 'blog',
+        component: Blog
     }
 ]
 

@@ -11,7 +11,7 @@
 
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-y-[100px] gap-10 justify-items-center mt-[120px]">
-            <div class="w-full md:w-[476px]">
+            <div class="w-full lg:w-[476px]">
                 <img class="w-[476px] h-auto md:h-[267px] rounded-t-[27px]"
                     src="https://plus.unsplash.com/premium_photo-1733342533441-c4309b51da17?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1032"
                     alt="">
@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-            <div class="w-full md:w-[476px]">
+            <div class="w-full lg:w-[476px]">
                 <img class="w-[476px] h-auto md:h-[267px] rounded-t-[27px]"
                     src="https://plus.unsplash.com/premium_photo-1733185420970-a7b2d6610d1c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=500"
                     alt="">
@@ -40,7 +40,7 @@
                 </div>
             </div>
 
-            <div class="w-full md:w-[476px]">
+            <div class="w-full lg:w-[476px]">
                 <img class="w-[476px] h-auto md:h-[267px] rounded-t-[27px]"
                     src="https://plus.unsplash.com/premium_photo-1733185420970-a7b2d6610d1c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=500"
                     alt="">
@@ -54,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="w-full md:w-[476px]">
+            <div class="w-full lg:w-[476px]">
                 <img class="w-[476px] h-auto md:h-[267px] rounded-t-[27px]"
                     src="https://plus.unsplash.com/premium_photo-1733185420970-a7b2d6610d1c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=500"
                     alt="">

@@ -6,7 +6,7 @@
                 industry standards.</p>
         </div>
 
-        <div class="flex flex-wrap  justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[30px] text-center gap-x-[48px] justify-items-center">
+        <div class="flex flex-wrap justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[30px] text-center gap-x-[48px] justify-items-center">
 
             <div class="w-[345px]">
                 <i class="fa fa-shield-alt fa-2x text-[lightgreen] mb-3"></i>

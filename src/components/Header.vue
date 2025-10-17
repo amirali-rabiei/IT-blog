@@ -1,5 +1,5 @@
 <template>
-    <header class="mt-[40px]">
+    <header class="mt-[30px]  bg-white sticky p-5 top-0 z-1 w-full">
 
         <nav class="flex justify-around items-center">
             <div>
@@ -15,8 +15,9 @@
                     <div class="flex gap-x-7 links">
                         <a href="#services">Services</a>
                         <a href="">About us</a>
-                        <a href="#a">Contact us</a>
-                        <a href="">Blog</a>
+                        <a href="#contact">Contact us</a>
+                        <!-- <a href="">Blog</a> -->
+                        <RouterLink to="/blog">Blog</RouterLink>
                     </div>
 
                     <div class="text-white bg-[#BE100F] px-[50px] py-1 rounded-[10px] text-center">
