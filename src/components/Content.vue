@@ -17,7 +17,7 @@
                     alt="">
                 <div class=" bg-[white] p-[15px] w-full lg:w-[476px] md:w-[476px] flex flex-col gap-y-[15px] pt-[35px]">
                     <h1 class="text-[22px] md:text-[30px] font-bold">AI Solutions</h1>
-                    <p class="text-[18px] md:text-[22px] text-gray-600">Empowering businesses with intelligent automation and data-driven insights.
+                    <p class="text-[18px] md:text-[20px] text-gray-600">Empowering businesses with intelligent automation and data-driven insights.
                     </p>
                     <div class="text-white bg-[#BE100F] px-[70px] w-fit py-2 rounded-[10px] text-center">
                         <a class="text-[16px] font-semibold" href="">More</a>
@@ -31,7 +31,7 @@
                     alt="">
                 <div class=" bg-[white] p-[15px] w-full lg:w-[476px] flex flex-col gap-y-[15px] pt-[35px]">
                     <h1 class="text-[22px] md:text-[30px] font-bold">IoT Devices</h1>
-                    <p class="text-[18px] md:text-[22px] text-gray-600">
+                    <p class="text-[18px] md:text-[20px] text-gray-600">
                         Integrating smart sensors and real-time data for seamless operations.
                     </p>
                     <div class="text-white bg-[#BE100F] px-[70px] w-fit py-2 rounded-[10px] text-center">
@@ -46,7 +46,7 @@
                     alt="">
                 <div class=" bg-[white] p-[15px] w-full lg:w-[476px] flex flex-col gap-y-[15px] pt-[35px]">
                     <h1 class="text-[22px] md:text-[30px] font-bold">AR & VR</h1>
-                    <p class="text-[18px] md:text-[22px] text-gray-600">
+                    <p class="text-[18px] md:text-[20px] text-gray-600">
                         Creating interactive augmented and virtual reality solutions for industries. </p>
                     <div class="text-white bg-[#BE100F] px-[70px] w-fit py-2 rounded-[10px] text-center">
                         <a class="text-[16px] font-semibold" href="">More</a>
@@ -60,7 +60,7 @@
                     alt="">
                 <div class=" bg-[white] p-[15px] w-full lg:w-[476px] flex flex-col gap-y-[15px] pt-[35px]">
                     <h1 class="text-[22px] md:text-[30px] font-bold">Analytics & Cloud</h1>
-                    <p class="text-[18px] md:text-[22px] text-gray-600">
+                    <p class="text-[18px] md:text-[20px] text-gray-600">
                         Delivering scalable cloud solutions and advanced analytics for innovation. </p>
                     <div class="text-white bg-[#BE100F] px-[70px] w-fit py-2 rounded-[10px] text-center">
                         <a class="text-[16px] font-semibold" href="">More</a>
