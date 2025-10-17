@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Typing with Color</title>
+<style>
+  #typedText {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+  }
+  .highlight {
+    color: red;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<div id="typedText"></div>
+
+<script>
+const text = "Innovating Smart Solutions for a Connected World Using AI, IoT, and Augmented Reality";
+const highlightWords = ["Smart", "AI", "IoT", "Augmented Reality"];
+let index = 0;
+let typedText = "";
+
+function type() {
+  if (index < text.length) {
+    typedText += text[index];
+
+    // تبدیل متن تایپ شده به آرایه کلمات
+    let words = typedText.split(/(\s+)/); // حفظ فاصله‌ها
+    console.log(words)
+    let html = words.map(word => {
+      return highlightWords.includes(word.trim()) 
+        ? `<span class="highlight">${word}</span>` 
+        : word;
+    }).join("");
+
+    document.getElementById("typedText").innerHTML = html;
+    index++;
+    setTimeout(type, 100);
+  }
+}
+
+type();
+</script>
+
+</body>
+</html>

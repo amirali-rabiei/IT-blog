@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'nim';
+  src: url('./fonts/NimbusSanL-Bol.otf');
+}
+
+@font-face {
+  font-family: 'Bnim';
+  src: url('./fonts/NimbusSanL-Bol.otf');
+}
+
+* {
+  scroll-behavior: smooth;
+}
