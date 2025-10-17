@@ -1,7 +1,7 @@
 <template>
 
     <div
-        class="bg-[black] flex flex-col md:flex-row lg:flex-row justify-around gap-y-[60px] relative items-center rounded-[22px]  text-white mt-[54px] p-[40px] ">
+        class="bg-[black] flex flex-col md:flex-row mb-2 lg:flex-row justify-around gap-y-[60px] relative items-center rounded-[22px]  text-white mt-[54px] p-[40px] ">
 
         <div class="w-full md:w-[400px] lg:w-[400px]">
             <h2 class="text-[30px] font-[nim]">About us</h2>
