@@ -1,12 +1,32 @@
+<script setup>
+import { ref, useTemplateRef } from 'vue';
+
+const isMenu = ref(false)
+const menuRef = useTemplateRef('menu')
+
+function toggleMenu() {
+    if (menuRef.value.style.display == 'none') {
+        menuRef.value.style.display = 'block'
+        isMenu.value = true
+    } else {
+        menuRef.value.style.display = 'none'
+        isMenu.value = false
+    }
+}
+
+</script>
+
 <template>
-    <header class="mt-[30px]  bg-white sticky p-5 top-0 z-1 w-full">
+    <header class="mt-[30px] bg-white sticky p-5 top-0 z-100 w-full">
+
 
         <nav class="flex justify-between lg:justify-around items-center">
+
             <div>
                 Dummy
             </div>
             <div class="lg:hidden md:hidden">
-                <i class="fa fa-bars"></i>
+                <i @click="toggleMenu" :class="!isMenu ? 'fa fa-bars' : 'fa fa-close'"></i>
             </div>
 
             <div class="hidden md:block lg:block">
@@ -17,7 +37,6 @@
                         <a href="#services">Products</a>
                         <a href="">About us</a>
                         <a href="#contact">Contact</a>
-                        <!-- <a href="">Blog</a> -->
                         <RouterLink to="/blog">Blog</RouterLink>
                     </div>
 
@@ -29,7 +48,20 @@
             </div>
 
         </nav>
+
     </header>
+    <div ref="menu" class="hidden md:hidden left-0 w-full h-screen fixed top z-1">
+        <div class="h-full bg-black flex justify-center text-white">
+            <ul class="mt-[100px] flex flex-col gap-y-[30px]">
+                <a href="#services">Activites</a>
+                <a href="#services">Products</a>
+                <a href="">About us</a>
+                <a href="#contact">Contact</a>
+                <RouterLink to="/blog">Blog</RouterLink>
+            </ul>
+        </div>
+    </div>
+
 </template>
 
 <style scoped>

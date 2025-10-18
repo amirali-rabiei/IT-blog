@@ -1,7 +1,10 @@
 <template>
-    <div class="mt-[200px] flex flex-col sm:flex-row bg-[#F9F9F9] p-3 gap-y-[60px] lg:flex-row justify-around items-center">
-        <div class="relative">
-            <!-- <div class="w-[100%] md:w-[461px] absolute -z-10 rounded-[20px]  top-6  md:left-2 h-[580px] shadow-2xl shadow-[black] md:rotate-2 bg-[#BE100F]"></div> -->
+    <div
+        class="mt-[200px] flex flex-col sm:flex-row bg-[#F9F9F9] p-4 gap-y-[60px] lg:flex-row justify-around items-center">
+        <div class="relative z-1">
+            <div
+                class="w-full md:w-[461px] absolute -z-1 rounded-[20px]  top-6  md:left-2 h-[480px]  md:rotate-1 bg-[#BE100F]">
+            </div>
             <img class="w-[85%] mx-auto lg:w-[461px] h-[600px] object-cover rounded-[20px] " src="./a.jpg" alt="img">
         </div>
         <div class="w-[100%]  md:w-[46%] text-center md:text-start">

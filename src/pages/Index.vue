@@ -2,27 +2,23 @@
 import Content from '../components/Content.vue';
 import Header from '../components/Header.vue';
 import Hero from '../components/Hero.vue';
-import Sec2 from '../components/Sec2.vue';
-import Sec3 from '../components/Sec3.vue';
-import Sec4 from '../components/Sec4.vue';
-// import Sec5 from './components/Contact.vue';
+import introduce from '../components/Introduce.vue';
+import Achievements from '../components/Achievements.vue';
+import blogs from '../components/blogs.vue';
 import Contact from '../components/Contact.vue';
 import Footer from '../components/Footer.vue';
 import Products from '../components/Products.vue';
 </script>
-
 <template>
-
     <div>
         <Header />
         <Hero />
         <Content />
         <Products />
-        <Sec2 />
-        <Sec3 />
-        <Sec4 />
+        <introduce />
+        <Achievements />
+        <blogs />
         <Contact />
         <Footer />
-
     </div>
 </template>
