@@ -25,18 +25,19 @@
         <div class="mx-auto md:mx-0 md:text-start w-full lg:w-fit md:w-fit lg:text-start">
             <div class="flex flex-col gap-y-6">
                 <div>
-                    <p>Username</p>
-                    <input class="outline-0 border-b border-red-500 text-[#A8A8A8] w-full lg:w-[300px]" type="text">
+                    <label for="username" class="block">Username</label>
+                    <input id="username" class="outline-0 border-b border-red-500 text-[#A8A8A8] w-full lg:w-[300px]"
+                        type="text">
                 </div>
                 <div>
-                    <p>Email</p>
-                    <input
+                    <label for="email" class="block">Email</label>
+                    <input id="email"
                         class=" placeholder-[#A8A8A8] text-[#A8A8A8] outline-0 border-b-1 border-[red] w-full lg:w-[300px]"
                         type="text">
                 </div>
                 <div>
-                    <p>Message</p>
-                    <textarea name="" id="" cols="20" rows="2"
+                    <label for="message" class="block">Message</label>
+                    <textarea id="message" cols="20" rows="2"
                         class="w-full lg:w-[300px] resize-none text-[#A8A8A8] max-h-[55px] outline-0 border-b-1 border-[red]"></textarea>
                 </div>
                 <button class="text-[black] rounded-[6px] bg-[white] lg:w-fit md:w-fit py-1 px-7">Submit</button>
