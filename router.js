@@ -1,15 +1,13 @@
 import { createWebHistory, createRouter } from 'vue-router'
 import Index from './src/pages/Index.vue'
-import Blog from './src/pages/Blog.vue'
-import SingleBlog from './src/pages/SingleBlog.vue'
-import NotFound from './src/pages/NotFound.vue'
+
 
 const routes = [
     {
         path: '/:pathMatch(.*)*',
         name: 'notFound',
-        component: NotFound
-
+        component: () => import('./src/pages/NotFound.vue'),
+        meta: { title: 'Page NotFound' }
     },
     {
         path: '/',
@@ -19,11 +17,18 @@ const routes = [
     {
         path: '/blog',
         name: 'blog',
-        component: Blog,
+        component: () => import('./src/pages/Blog.vue'),
+        meta: { title: 'Blog' }
     },
     {
         path: '/blog/:id',
-        component: SingleBlog,
+        component: () => import('./src/pages/SingleBlog.vue'),
+        meta: { title: 'Blog post' }
+    },
+    {
+        path: '/dashboard',
+        component: () => import('./src/pages/Dashboard.vue'),
+        meta: { title: 'Dashboard - Admin' }
     }
 ]
 
@@ -31,6 +36,12 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes
+})
+
+router.beforeEach((to) => {
+    const { title } = to.meta
+
+    document.title = title || 'IT-Comany'
 })
 
 export default router

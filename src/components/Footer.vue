@@ -5,7 +5,7 @@
 
         <div class="w-full md:w-[400px] lg:w-[400px]">
             <h2 class="text-[30px] font-[nim]">About us</h2>
-            <p class="leading-[1.6]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iure nobis
+            <p class="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iure nobis
                 exercitationem nihil incidunt
                 expedita repellat sequi dolor fuga! Corrupti, consequatur! Cum soluta esse eaque porro? Architecto
                 similique veritatis repellat deserunt nesciunt. Nesciunt impedit deleniti enim doloremque tempora

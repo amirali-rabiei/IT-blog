@@ -3,6 +3,7 @@
 @font-face {
   font-family: 'nim';
   src: url('./fonts/NimbusSanL-Bol.otf');
+  font-display: swap;
 }
 
 @font-face {

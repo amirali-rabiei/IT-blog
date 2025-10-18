@@ -3,8 +3,8 @@
         class="mt-[100px]  flex flex-col md:flex-row lg:flex-row gap-y-[50px] justify-around bg-[black] rounded-[22px] text-white p-[40px]">
         <div class="w-[100%] md:w-[400px] lg:w-[400px] flex flex-col gap-y-6">
             <div class="">
-                <h2 class=" text-4xl font-[nim]">Contact us</h2>
-                <p>Have any questions or suggestions? We’d be happy to hear from you!
+                <h2 class="text-4xl font-[nim]">Contact us</h2>
+                <p class="leading-relaxed">Have any questions or suggestions? We’d be happy to hear from you!
                     You can use the form below or reach us through our contact channels</p>
             </div>
             <div class="flex flex-col gap-y-4">

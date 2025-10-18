@@ -1,51 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Auto Typing with Color</title>
-<style>
-  #typedText {
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-  }
-  .highlight {
-    color: red;
-    font-weight: bold;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <title>Document</title>
 </head>
 <body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="parallax-bg" data-swiper-parallax="-23%"></div>
+        <div class="title" data-swiper-parallax="-300">Slide 1 Title</div>
+        <div class="subtitle" data-swiper-parallax="-200">Subtitle for Slide 1</div>
+        <div class="text" data-swiper-parallax="-100">Some text for Slide 1.</div>
+      </div>
+      <div class="swiper-slide">
+        <div class="parallax-bg" data-swiper-parallax="-23%"></div>
+        <div class="title" data-swiper-parallax="-300">Slide 2 Title</div>
+        <div class="subtitle" data-swiper-parallax="-200">Subtitle for Slide 2</div>
+        <div class="text" data-swiper-parallax="-100">Some text for Slide 2.</div>
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
 
-<div id="typedText"></div>
 
-<script>
-const text = "Innovating Smart Solutions for a Connected World Using AI, IoT, and Augmented Reality";
-const highlightWords = ["Smart", "AI", "IoT", "Augmented Reality"];
-let index = 0;
-let typedText = "";
-
-function type() {
-  if (index < text.length) {
-    typedText += text[index];
-
-    // تبدیل متن تایپ شده به آرایه کلمات
-    let words = typedText.split(/(\s+)/); // حفظ فاصله‌ها
-    console.log(words)
-    let html = words.map(word => {
-      return highlightWords.includes(word.trim()) 
-        ? `<span class="highlight">${word}</span>` 
-        : word;
-    }).join("");
-
-    document.getElementById("typedText").innerHTML = html;
-    index++;
-    setTimeout(type, 100);
-  }
+  <style>
+    .swiper-container {
+  width: 100%;
+  height: 300px; /* Adjust as needed */
+  overflow: hidden;
 }
 
-type();
-</script>
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%; /* Larger than slide to allow for movement */
+  height: 100%;
+  background-image: url('your-background-image.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+}
+
+.title, .subtitle, .text {
+  position: relative; /* Important for parallax effect */
+  z-index: 1; /* To appear above parallax-bg */
+  color: white; /* Example styling */
+}
+  </style>
+ 
+ 
+ <script>
+
+import Swiper from 'swiper';
+import { Pagination, Navigation, Parallax } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+const swiper = new Swiper('.swiper-container', {
+  modules: [Pagination, Navigation, Parallax],
+  speed: 600,
+  parallax: true, // Enable parallax effect
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+ </script>
 </body>
 </html>

@@ -8,6 +8,7 @@ import Sec4 from '../components/Sec4.vue';
 // import Sec5 from './components/Contact.vue';
 import Contact from '../components/Contact.vue';
 import Footer from '../components/Footer.vue';
+import Products from '../components/Products.vue';
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import Footer from '../components/Footer.vue';
         <Header />
         <Hero />
         <Content />
+        <Products />
         <Sec2 />
         <Sec3 />
         <Sec4 />
