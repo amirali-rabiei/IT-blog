@@ -1,0 +1,18 @@
+{
+    "title": "Achievements",
+    "description": "Our company has been recognized for excellence in technology, innovation, and industry standards.",
+    "achievement": {
+        "firstAchieve": {
+            "title": "ISO Certified",
+            "description": "Complying with international quality and management standards."
+        },
+        "secondAchieve": {
+            "title": "Innovation Awards",
+            "description": "Recognized for groundbreaking AI and IoT solutions."
+        },
+        "thridAchieve": {
+            "title": "Professional Memberships",
+            "description": "Active member in professional and technological associations."
+        }
+    }
+}

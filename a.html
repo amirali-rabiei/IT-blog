@@ -1,96 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Text</title>
+<style>
+  * { box-sizing: border-box; }
+
+  div {
+    position: relative;
+    display: inline-block;
+  }
+
+  img {
+    display: block;
+    width: 400px;
+  }
+
+  p {
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  div:hover p {
+    opacity: 1;
+  }
+</style>
 </head>
 <body>
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="parallax-bg" data-swiper-parallax="-23%"></div>
-        <div class="title" data-swiper-parallax="-300">Slide 1 Title</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle for Slide 1</div>
-        <div class="text" data-swiper-parallax="-100">Some text for Slide 1.</div>
-      </div>
-      <div class="swiper-slide">
-        <div class="parallax-bg" data-swiper-parallax="-23%"></div>
-        <div class="title" data-swiper-parallax="-300">Slide 2 Title</div>
-        <div class="subtitle" data-swiper-parallax="-200">Subtitle for Slide 2</div>
-        <div class="text" data-swiper-parallax="-100">Some text for Slide 2.</div>
-      </div>
-      <!-- Add more slides as needed -->
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Navigation -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
 
+<div>
+  <img src="https://plus.unsplash.com/premium_photo-1733342533441-c4309b51da17?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&q=80&w=1032" alt="">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex at rerum delectus, fuga officiis minus!</p>
+</div>
 
-  <style>
-    .swiper-container {
-  width: 100%;
-  height: 300px; /* Adjust as needed */
-  overflow: hidden;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.parallax-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 130%; /* Larger than slide to allow for movement */
-  height: 100%;
-  background-image: url('your-background-image.jpg'); /* Replace with your image */
-  background-size: cover;
-  background-position: center;
-}
-
-.title, .subtitle, .text {
-  position: relative; /* Important for parallax effect */
-  z-index: 1; /* To appear above parallax-bg */
-  color: white; /* Example styling */
-}
-  </style>
- 
- 
- <script>
-
-import Swiper from 'swiper';
-import { Pagination, Navigation, Parallax } from 'swiper/modules';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-const swiper = new Swiper('.swiper-container', {
-  modules: [Pagination, Navigation, Parallax],
-  speed: 600,
-  parallax: true, // Enable parallax effect
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
- </script>
 </body>
 </html>

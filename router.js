@@ -18,7 +18,7 @@ const routes = [
         path: '/blog',
         name: 'blog',
         component: () => import('./src/pages/Blog.vue'),
-        meta: { title: 'Blog' }
+        meta: { title: 'Blog' },
     },
     {
         path: '/blog/:id',
@@ -28,7 +28,22 @@ const routes = [
     {
         path: '/dashboard',
         component: () => import('./src/pages/Dashboard.vue'),
-        meta: { title: 'Dashboard - Admin' }
+        meta: { title: 'Dashboard - Admin' },
+        children: [
+            {
+                path: '/dashboard/article',
+                component: () => import('./src/layouts/Articles.vue'),
+            },
+            {
+                path: '/dashboard/new-article',
+                component: () => import('./src/layouts/newArticle.vue'),
+            }
+        ]
+    },
+    {
+        path: '/login',
+        name: 'login',
+        component: () => import('./src/pages/Login.vue'),
     }
 ]
 
@@ -40,7 +55,6 @@ const router = createRouter({
 
 router.beforeEach((to) => {
     const { title } = to.meta
-
     document.title = title || 'IT-Comany'
 })
 

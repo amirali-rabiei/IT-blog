@@ -1,5 +1,7 @@
 <script setup>
 import { ref, useTemplateRef } from 'vue';
+import { useI18n } from 'vue-i18n'
+import { useLanguageStore } from '../store/languageStore';
 
 const isMenu = ref(false)
 const menuRef = useTemplateRef('menu')
@@ -12,6 +14,12 @@ function toggleMenu() {
         menuRef.value.style.display = 'none'
         isMenu.value = false
     }
+}
+const { locale } = useI18n()
+const language = ref()
+const changeLangState = () => {
+    locale.value = language.value
+    useLanguageStore().changeLanguage(language.value)
 }
 
 </script>
@@ -33,15 +41,22 @@ function toggleMenu() {
                 <div class="flex items-center lg:gap-x-[121px] sm:gap-[50px] font-[nim]">
 
                     <div class="flex gap-x-7 links">
-                        <a href="#services">Activites</a>
-                        <a href="#services">Products</a>
-                        <a href="">About us</a>
-                        <a href="#contact">Contact</a>
-                        <RouterLink to="/blog">Blog</RouterLink>
+                        <a href="#services">{{ $t('header.activities') }}</a>
+                        <a href="#services">{{ $t('header.products') }}</a>
+                        <a href="">{{ $t('header.about-us') }}</a>
+                        <a href="#contact">{{ $t('header.contact') }}</a>
+                        <RouterLink to="/blog">{{ $t('header.blog') }}</RouterLink>
                     </div>
 
                     <div class="text-white bg-[#BE100F] px-[50px] sm:px-[35px] py-1 rounded-[10px] text-center">
-                        <a class="text-[16px]" href="">ENG</a>
+                        {{ $t('header.eng') }}
+                        <select name="" id="" @change="changeLangState" v-model="language" class=" w-[15px]">
+                            <option disabled value="">Choose language</option>
+                            <option value="en" selected>En</option>
+                            <option value="fa">Fa</option>
+                            <option value="ar">Ar</option>
+                        </select>
+                        <!-- <button class="text-[16px]" href="" @click="changeLangState">{{ $t('header.eng') }}</button> -->
                     </div>
 
                 </div>
