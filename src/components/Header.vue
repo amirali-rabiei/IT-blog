@@ -67,13 +67,25 @@ const changeLangState = () => {
     </header>
     <div ref="menu" class="hidden md:hidden left-0 w-full h-screen fixed top z-1">
         <div class="h-full bg-black flex justify-center text-white">
-            <ul class="mt-[100px] flex flex-col gap-y-[30px]">
-                <a href="#services">Activites</a>
-                <a href="#services">Products</a>
-                <a href="">About us</a>
-                <a href="#contact">Contact</a>
-                <RouterLink to="/blog">Blog</RouterLink>
+            <ul class="mt-[100px] flex flex-col items-center gap-y-[30px]">
+                <a href="#services">{{ $t('header.activities') }}</a>
+                <a href="#services">{{ $t('header.products') }}</a>
+                <a href="">{{ $t('header.about-us') }}</a>
+                <a href="#contact">{{ $t('header.contact') }}</a>
+                <RouterLink to="/blog">{{ $t('header.blog') }}</RouterLink>
+
+                <div class="text-white bg-[#BE100F] px-[50px] sm:px-[35px] py-1 rounded-[10px] text-center">
+                    {{ $t('header.eng') }}
+                    <select name="" id="" @change="changeLangState" v-model="language" class=" w-[15px]">
+                        <option disabled value="">Choose language</option>
+                        <option value="en" selected>En</option>
+                        <option value="fa">Fa</option>
+                        <option value="ar">Ar</option>
+                    </select>
+                    <!-- <button class="text-[16px]" href="" @click="changeLangState">{{ $t('header.eng') }}</button> -->
+                </div>
             </ul>
+
         </div>
     </div>
 
