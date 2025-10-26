@@ -1,24 +1,29 @@
+<script setup>
+import { useLanguageStore } from '../store/languageStore';
+
+
+const language = useLanguageStore()
+
+</script>
+
 <template>
 
     <div
-        class="bg-[black] flex flex-col md:flex-row mb-2 lg:flex-row justify-around gap-y-[60px] relative items-center rounded-[22px]  text-white mt-[54px] p-[40px] ">
+        :class="['bg-[black] flex flex-col md:flex-row mb-2 lg:flex-row justify-around gap-y-[60px] relative items-center rounded-[22px]  text-white mt-[54px] p-[40px]', language.lang === 'fa' || language.lang === 'ar' ? 'md:flex-row-reverse lg:flex-row-reverse' : 'lg:flex-row'] ">
 
-        <div class="w-full md:w-[400px] lg:w-[400px]">
-            <h2 class="text-[30px] font-[nim]">About us</h2>
-            <p class="leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo iure nobis
-                exercitationem nihil incidunt
-                expedita repellat sequi dolor fuga! Corrupti, consequatur! Cum soluta esse eaque porro? Architecto
-                similique veritatis repellat deserunt nesciunt. Nesciunt impedit deleniti enim doloremque tempora
-                molestiae facere?</p>
+        <div
+            :class="['w-full md:w-[400px] lg:w-[400px]', language.lang === 'fa' || language.lang === 'ar' ? 'text-right' : 'text-left']">
+            <h2 class="text-[30px] font-[nim]">{{ $t('footer.title') }}</h2>
+            <p class="leading-relaxed">{{ $t('footer.description') }}</p>
         </div>
 
-        <div class="flex flex-col text-center md:text-start lg:text-start md:flex-row lg:flex-row gap-y-9 gap-x-[97px]">
+        <div :class="['flex flex-col text-center md:text-start lg:text-start md:flex-row lg:flex-row-reverse  gap-y-9 gap-x-[97px]', language.lang === 'fa' || language.lang === 'ar' ? 'md:flex-row-reverse lg:flex-row-reverse' : 'lg:flex-row']">
             <div class="flex flex-col gap-y-2">
-                <h2 class="text-[20px] font-[nim]">Links</h2>
-                <a href="">Services</a>
-                <a href="">Blog</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
+                <h2 class="text-[20px] font-[nim]">{{ $t('footer.links') }}</h2>
+                <a href="">{{ $t('footer.activities') }}</a>
+                <a href="">{{ $t('footer.blog') }}</a>
+                <a href="">{{ $t('footer.about-us') }}</a>
+                <a href="">{{ $t('footer.contact') }}</a>
             </div>
 
 

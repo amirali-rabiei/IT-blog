@@ -1,11 +1,17 @@
+<script setup>
+import { useLanguageStore } from '../store/languageStore';
+
+
+const language = useLanguageStore()
+
+</script>
 <template>
     <div id="contact"
-        class="mt-[100px]  flex flex-col md:flex-row lg:flex-row gap-y-[50px] justify-around bg-[black] rounded-[22px] text-white p-[40px]">
+        :class="['mt-[100px] flex flex-col md:flex-row lg:flex-row gap-y-[50px] justify-around bg-[black] rounded-[22px] text-white p-[40px]', language.lang === 'fa' || language.lang === 'ar' ? 'lg:flex-row-reverse text-right' : 'lg:flex-row text-left']">
         <div class="w-[100%] md:w-[400px] lg:w-[400px] flex flex-col gap-y-6">
             <div class="">
-                <h2 class="text-4xl font-[nim]">Contact us</h2>
-                <p class="leading-relaxed">Have any questions or suggestions? We’d be happy to hear from you!
-                    You can use the form below or reach us through our contact channels</p>
+                <h2 class="text-4xl font-[nim]">{{ $t('contact.title') }}</h2>
+                <p class="leading-relaxed">{{ $t('contact.description') }}</p>
             </div>
             <div class="flex flex-col gap-y-4">
                 <div>
@@ -23,24 +29,28 @@
             </div>
         </div>
         <div class="mx-auto md:mx-0 md:text-start w-full lg:w-fit md:w-fit lg:text-start">
-            <div class="flex flex-col gap-y-6">
+            <div
+                :class="['flex flex-col gap-y-6', language.lang === 'fa' || language.lang === 'ar' ? 'text-right' : 'text-left']">
                 <div>
-                    <label for="username" class="block">Username</label>
-                    <input id="username" class="outline-0 border-b border-red-500 text-[#A8A8A8] w-full lg:w-[300px]"
+                    <label for="username" class="block">{{ $t('contact.username') }}</label>
+                    <input id="username" :class="['outline-0 text-[15px] border-b border-red-500 text-[#A8A8A8] w-full lg:w-[300px]', language.lang === 'fa' || language.lang === 'ar' ? 'text-right' : 'text-left']"
                         type="text">
                 </div>
                 <div>
-                    <label for="email" class="block">Email</label>
+                    <label for="email" class="block">{{ $t('contact.email') }}</label>
                     <input id="email"
-                        class=" placeholder-[#A8A8A8] text-[#A8A8A8] outline-0 border-b-1 border-[red] w-full lg:w-[300px]"
+                        :class="['outline-0 border-b text-[15px] border-red-500 text-[#A8A8A8] w-full lg:w-[300px]', language.lang === 'fa' || language.lang === 'ar' ? 'text-right' : 'text-left']"
                         type="text">
                 </div>
                 <div>
-                    <label for="message" class="block">Message</label>
+                    <label for="message" class="block">{{ $t('contact.message') }}</label>
                     <textarea id="message" cols="20" rows="2"
-                        class="w-full lg:w-[300px] resize-none text-[#A8A8A8] max-h-[55px] outline-0 border-b-1 border-[red]"></textarea>
+                    :class="['outline-0 border-b text-[15px] border-red-500 text-[#A8A8A8] w-full lg:w-[300px]', language.lang === 'fa' || language.lang === 'ar' ? 'text-right' : 'text-left']"></textarea>
                 </div>
-                <button class="text-[black] rounded-[6px] bg-[white] lg:w-fit md:w-fit py-1 px-7">Submit</button>
+                <div class="py-2">
+                    <button class="text-[black]  rounded-[6px] bg-[white] lg:w-fit md:w-fit py-1 px-7">{{
+                        $t('contact.submit') }}</button>
+                </div>
 
             </div>
         </div>

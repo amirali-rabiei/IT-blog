@@ -27,10 +27,10 @@ function show() {
             </div>
             <div class="flex flex-col gap-y-[17px] mt-[52px] text-[#747475]">
                 <!-- <a href="">Article</a> -->
-                <RouterLink to="/dashboard/article">Article</RouterLink>
-                <a href="">Products</a>
-                <a href="">Comapnies</a>
-                <a href="">Achivements</a>
+                <RouterLink to="/dashboard/article">{{$t('dashboard.article')}}</RouterLink>
+                <a href="">{{$t('dashboard.products')}}</a>
+                <a href="">{{$t('dashboard.companies')}}</a>
+                <a href="">{{$t('dashboard.achievements')}}</a>
             </div>
         </div>
         <div class="bg-[#F9F9F9] w-[100%] p-[26px] overflow-auto">

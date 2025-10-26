@@ -9,10 +9,21 @@
 @font-face {
   font-family: 'Bnim';
   src: url('./fonts/NimbusSanL-Bol.otf');
+  font-display: swap;
 }
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('./fonts/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
   transition: 1s;
 }
+
