@@ -1,0 +1,18 @@
+{
+  "dashboard": "لوحة التحكم",
+  "home": "الرئيسية",
+  "article": "المقالات",
+  "activity": "الأنشطة",
+  "products": "المنتجات",
+  "companies": "الشركاء",
+  "logout": "تسجيل الخروج",
+  "achievements": "الإنجازات",
+  "add-article": "إضافة مقال",
+  "add-activity": "إضافة نشاط",
+  "add-companies": "إضافة شريك",
+  "add-achievements": "إضافة إنجاز",
+  "add-product": "إضافة منتج",
+  "delete": "حذف",
+  "save-all": "حفظ الكل",
+  "save-all-languages": "حفظ جميع اللغات"
+}

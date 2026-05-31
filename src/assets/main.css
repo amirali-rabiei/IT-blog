@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;500;700&family=Vazirmatn:wght@400;500;600;700&family=Cairo:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+
+.font-main {
+  font-family: Inter, Vazirmatn, Cairo, Noto Kufi Arabic, Roboto, "Open Sans", sans-serif;
+}
+
+
+
+@font-face {
+  font-family: 'nim';
+  src: url('./fonts/NimbusSanL-Bol.otf');
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'yek';
+  src: url('./fonts/fonnts.com-YekanBakh-Regular.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'yekb';
+  src: url('./fonts/fonnts.com-YekanBakh-Bold.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bnim';
+  src: url('./fonts/NimbusSanL-Bol.otf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('./fonts/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* transition: 1s; */
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.83em;
+}
+
+h6 {
+  font-size: 0.67em;
+}
+
+
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #081F3C;
+} */

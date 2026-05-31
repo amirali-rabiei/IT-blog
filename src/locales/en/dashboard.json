@@ -1,0 +1,18 @@
+{
+  "dashboard": "Dashboard",
+  "home": "Home",
+  "article": "Articles",
+  "activity": "Activities",
+  "products": "Products",
+  "companies": "Partners",
+  "logout": "Logout",
+  "achievements": "Achievements",
+  "add-article": "Add article",
+  "add-activity": "Add activity",
+  "add-companies": "Add company",
+  "add-achievements": "Add achievements",
+  "add-product": "Add product",
+  "delete": "delete",
+  "save-all": "Save All",
+  "save-all-languages": "Save all languages"
+}

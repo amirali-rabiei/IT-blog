@@ -1,0 +1,18 @@
+{
+  "dashboard": "داشبورد",
+  "home": "خانه",
+  "article": "مقالات",
+  "activity": "فعالیت‌ها",
+  "products": "محصولات",
+  "companies": "شرکای تجاری",
+  "logout": "خروج",
+  "achievements": "دستاوردها",
+  "add-article": "افزودن مقاله",
+  "add-activity": "افزودن فعالیت",
+  "add-companies": "افزودن شریک تجاری",
+  "add-achievements": "افزودن دستاورد",
+  "add-product": "افزودن محصول",
+  "delete": "حذف",
+  "save-all": "ذخیره همه",
+  "save-all-languages": "ذخیره همه زبان‌ها"
+}
